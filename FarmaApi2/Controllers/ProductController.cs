@@ -7,7 +7,7 @@ namespace FarmaApi2.Controllers
 {
     [ApiController]
     [Route("[Controller]")]
-    public class ProductController : Controller
+    public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
 
