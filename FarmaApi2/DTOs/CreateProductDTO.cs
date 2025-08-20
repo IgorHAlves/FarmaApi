@@ -3,5 +3,7 @@
     public class CreateProductDTO
     {
         public string Name;
+        public string Brand;
+        public decimal Price;
     }
 }

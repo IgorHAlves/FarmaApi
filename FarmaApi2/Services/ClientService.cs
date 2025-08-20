@@ -11,17 +11,56 @@ namespace FarmaApi2.Services
         {
             _clientRepository = clientRepository;
         }
-        public Client CreateClient(CreateClientDTO dto)
-        {
-            Client client = _clientRepository.CreateClient(dto);
 
-            return client;
+
+        public Client GetClient(int id)
+        {
+            try
+            {
+                Client client = _clientRepository.GetClient(id);
+
+                return client;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao localizar cliente: "+ ex.Message);
+            }
         }
 
         public List<Client> GetClients()
         {
-            List<Client> clients = _clientRepository.GetClients();
-            return clients;
+            try
+            {
+                List<Client> clients = _clientRepository.GetClients();
+                return clients;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao listar cliente: " + ex.Message);
+            }
+        }
+
+        public Client CreateClient(CreateClientDTO dto)
+        {
+            try
+            {
+                Client client = new Client();
+
+                client.Name = dto.Name;
+                client.Email = dto.Email;
+                client.Password = dto.Password;
+                client.Username = dto.Username;
+
+                Client newClient = _clientRepository.CreateClient(client);
+
+                return newClient;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao cadastrar cliente: "+ ex.Message);
+
+            }
         }
     }
 }

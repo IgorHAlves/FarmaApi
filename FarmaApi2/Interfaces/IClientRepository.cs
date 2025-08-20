@@ -7,7 +7,6 @@ namespace FarmaApi2.Interfaces
     {
         public Client GetClient(int id);
         public List<Client> GetClients();
-
-        public Client CreateClient(CreateClientDTO dto);
+        public Client CreateClient(Client client);
     }
 }

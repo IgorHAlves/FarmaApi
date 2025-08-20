@@ -6,7 +6,6 @@ namespace FarmaApi2.Interfaces
     {
         public List<Sale> GetSales();
         public Sale GetSale(int id);
-
-        public int CreateSale(Sale sale);
+        public Sale CreateSale(Sale sale);
     }
 }
