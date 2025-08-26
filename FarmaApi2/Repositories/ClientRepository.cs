@@ -1,7 +1,6 @@
-﻿using FarmaApi2.DBContext;
+﻿using FarmaApi2.Data.DBContext;
 using FarmaApi2.Entity;
 using FarmaApi2.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace FarmaApi2.Repositories
 {
@@ -18,14 +17,19 @@ namespace FarmaApi2.Repositories
             throw new NotImplementedException();
         }
 
-        public Client GetClient(int id)
+        public Client GetClient(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Clients
+                .Select(client => client)
+                .Where(client => client.Id.Equals(id))
+                .First();
         }
 
-        public async List<Client> GetClients()
+        public List<Client> GetClients()
         {
-            return await _context.Clients.ToListAsync();
+            return _context.Clients
+                .Select(client => client)
+                .ToList();
         }
     }
 }

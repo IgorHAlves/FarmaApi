@@ -13,7 +13,7 @@ namespace FarmaApi2.Services
         }
 
 
-        public Client GetClient(int id)
+        public Client GetClient(Guid id)
         {
             try
             {

@@ -1,8 +1,7 @@
 ﻿using FarmaApi2.Entity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 
-namespace FarmaApi2.DBContext
+namespace FarmaApi2.Data.DBContext
 {
     public partial class Context : DbContext
     {
@@ -14,7 +13,7 @@ namespace FarmaApi2.DBContext
         {
         }
 
-        public override void OnModelCreation(ModelBuilder modelBuilder)
+        public override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>()
                 .HasKey(product => product.Id);
@@ -32,7 +31,6 @@ namespace FarmaApi2.DBContext
 
             OnModelCreationgPartial(modelBuilder);
         }
-
         partial void OnModelCreationgPartial(ModelBuilder modelBuilder);
     }
 }

@@ -2,9 +2,9 @@
 {
     public class CreateSaleDTO
     {
-        public int ProductId;
+        public Guid ProductId;
 
-        public int ClientId;
+        public Guid ClientId;
 
         public int Amount;
     }

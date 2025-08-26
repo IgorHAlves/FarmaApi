@@ -1,10 +1,6 @@
 ﻿using FarmaApi2.DTOs;
 using FarmaApi2.Entity;
 using FarmaApi2.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
-using System.Reflection.Metadata;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks.Dataflow;
 
 namespace FarmaApi2.Services
 {
@@ -50,7 +46,7 @@ namespace FarmaApi2.Services
             }
         }
 
-        public Sale CreateSale(CreateSaleDTO saleDTO) 
+        public Sale CreateSale(CreateSaleDTO saleDTO)
         {
             try
             {
@@ -74,10 +70,7 @@ namespace FarmaApi2.Services
             catch (Exception ex)
             {
                 throw new Exception("Erro ao cadastrar venda: " + ex.Message);
-            } 
+            }
         }
-
-
-
     }
 }

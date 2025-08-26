@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\dev\\FarmaApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\interfaces\\isaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\interfaces\\isaleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\dbcontext\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\dbcontext\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\dtos\\createclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\dtos\\createclientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|c:\\dev\\farmaapi\\farmaapi2\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEC0AF8F-E6EB-414E-80DB-4DFBF54D209D}|FarmaApi2\\FarmaApi2.csproj|solutionrelative:farmaapi2\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,89 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ISaleService.cs",
-              "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\Interfaces\\ISaleService.cs",
-              "RelativeDocumentMoniker": "FarmaApi2\\Interfaces\\ISaleService.cs",
-              "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\Interfaces\\ISaleService.cs",
-              "RelativeToolTip": "FarmaApi2\\Interfaces\\ISaleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T23:52:14.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SaleService.cs",
-              "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\Services\\SaleService.cs",
-              "RelativeDocumentMoniker": "FarmaApi2\\Services\\SaleService.cs",
-              "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\Services\\SaleService.cs",
-              "RelativeToolTip": "FarmaApi2\\Services\\SaleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T23:22:31.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClientService.cs",
-              "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\Services\\ClientService.cs",
-              "RelativeDocumentMoniker": "FarmaApi2\\Services\\ClientService.cs",
-              "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\Services\\ClientService.cs",
-              "RelativeToolTip": "FarmaApi2\\Services\\ClientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T23:22:29.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Context.cs",
               "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\DBContext\\Context.cs",
               "RelativeDocumentMoniker": "FarmaApi2\\DBContext\\Context.cs",
               "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\DBContext\\Context.cs",
               "RelativeToolTip": "FarmaApi2\\DBContext\\Context.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T22:59:05.565Z",
+              "WhenOpened": "2025-08-26T00:12:09.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "FarmaApi2\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "FarmaApi2\\Repositories\\ClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T00:12:00.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "FarmaApi2\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "FarmaApi2\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:56:11.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateProductDTO.cs",
-              "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\DTOs\\CreateProductDTO.cs",
-              "RelativeDocumentMoniker": "FarmaApi2\\DTOs\\CreateProductDTO.cs",
-              "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\DTOs\\CreateProductDTO.cs",
-              "RelativeToolTip": "FarmaApi2\\DTOs\\CreateProductDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Title": "SaleService.cs",
+              "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\Services\\SaleService.cs",
+              "RelativeDocumentMoniker": "FarmaApi2\\Services\\SaleService.cs",
+              "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\Services\\SaleService.cs",
+              "RelativeToolTip": "FarmaApi2\\Services\\SaleService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T22:58:30.813Z",
+              "WhenOpened": "2025-08-25T23:22:31.677Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateClientDTO.cs",
-              "DocumentMoniker": "C:\\dev\\FarmaApi\\FarmaApi2\\DTOs\\CreateClientDTO.cs",
-              "RelativeDocumentMoniker": "FarmaApi2\\DTOs\\CreateClientDTO.cs",
-              "ToolTip": "C:\\dev\\FarmaApi\\FarmaApi2\\DTOs\\CreateClientDTO.cs",
-              "RelativeToolTip": "FarmaApi2\\DTOs\\CreateClientDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T22:58:30.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
