@@ -33,3 +33,15 @@ C:\Users\AULA\source\repos\FarmaApi2\FarmaApi2\obj\Debug\net8.0\refint\FarmaApi2
 C:\Users\AULA\source\repos\FarmaApi2\FarmaApi2\obj\Debug\net8.0\FarmaApi2.pdb
 C:\Users\AULA\source\repos\FarmaApi2\FarmaApi2\obj\Debug\net8.0\FarmaApi2.genruntimeconfig.cache
 C:\Users\AULA\source\repos\FarmaApi2\FarmaApi2\obj\Debug\net8.0\ref\FarmaApi2.dll
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.csproj.AssemblyReference.cache
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.AssemblyInfoInputs.cache
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.AssemblyInfo.cs
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.csproj.CoreCompileInputs.cache
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.MvcApplicationPartsAssemblyInfo.cs
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.MvcApplicationPartsAssemblyInfo.cache
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.sourcelink.json
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.dll
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\refint\FarmaApi2.dll
+C:\dev\FarmaApi\FarmaApi2\obj\Debug\net8.0\FarmaApi2.pdb

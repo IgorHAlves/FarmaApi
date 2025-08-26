@@ -21,7 +21,7 @@ namespace FarmaApi2.Services
             _productService = productService;
         }
 
-        public Sale GetSale(int id)
+        public Sale GetSale(Guid id)
         {
             try
             {
@@ -54,9 +54,12 @@ namespace FarmaApi2.Services
         {
             try
             {
-                Client client = _clientService.GetClient(saleDTO.ClientId) ?? throw new KeyNotFoundException("Cliente não encontrado");
+                Client? client = _clientService.GetClient(saleDTO.ClientId) ?? throw new KeyNotFoundException("Cliente não encontrado");
 
-                Product product = _productService.GetProduct(saleDTO.ProductId) ?? throw new KeyNotFoundException("Produto não encontrado");
+                Product? product = _productService.GetProduct(saleDTO.ProductId) ?? throw new KeyNotFoundException("Produto não encontrado");
+
+                if (product.Stock < saleDTO.Amount)
+                    throw new Exception("Estoque não disponível");
 
                 Sale sale = new Sale();
 

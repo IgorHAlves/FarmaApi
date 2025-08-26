@@ -5,5 +5,6 @@
         public string Name;
         public string Brand;
         public decimal Price;
+        public int Stock;
     }
 }

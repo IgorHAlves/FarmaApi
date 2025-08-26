@@ -5,8 +5,8 @@ namespace FarmaApi2.Interfaces
 {
     public interface ISaleService
     {
-        public Sale GetSale(int id);
+        public Sale GetSale(Guid id);
         public List<Sale> GetSales();
-        public int CreateSale(CreateSaleDTO sale);
+        public Sale CreateSale(CreateSaleDTO sale);
     }
 }

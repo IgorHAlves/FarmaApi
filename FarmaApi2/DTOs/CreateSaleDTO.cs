@@ -5,5 +5,7 @@
         public int ProductId;
 
         public int ClientId;
+
+        public int Amount;
     }
 }
