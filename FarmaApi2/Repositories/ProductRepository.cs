@@ -17,7 +17,7 @@ namespace FarmaApi2.Repositories
             throw new NotImplementedException();
         }
 
-        public Product GetProduct(int id)
+        public Product GetProduct(Guid id)
         {
             return _context.Products.FirstOrDefault(product => product.Id.Equals(id));
         }

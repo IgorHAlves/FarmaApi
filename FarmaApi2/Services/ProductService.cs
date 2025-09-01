@@ -12,7 +12,7 @@ namespace FarmaApi2.Services
             _productRepository = productRepository; 
         }
 
-        public Product GetProduct(int id)
+        public Product GetProduct(Guid id)
         {
             try
             {

@@ -24,10 +24,22 @@ namespace FarmaApi2.Data.DBContext
             modelBuilder.Entity<Sale>()
                 .HasKey(sale => sale.Id);
 
+
             modelBuilder.Entity<Sale>()
                 .HasOne(sale => sale.Client)
-                .WithMany()
-                .HasForeignKey(sale => sale.Client.Id);
+                .WithMany(client => client.Sales)
+                .HasForeignKey(sale => sale.ClientId);
+
+
+            modelBuilder.Entity<Sale>()
+                .HasOne(sale => sale.Client)
+                .WithMany(client => client.Sales)
+                .HasForeignKey(sale => sale.ClientId);
+
+            modelBuilder.Entity<Sale>()
+                .HasOne(sale => sale.Product)
+                .WithMany(product => product.Sales)
+                .HasForeignKey(sale => sale.ProductId);
 
             OnModelCreationgPartial(modelBuilder);
         }
