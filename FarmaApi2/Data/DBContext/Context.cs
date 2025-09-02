@@ -13,7 +13,7 @@ namespace FarmaApi2.Data.DBContext
         {
         }
 
-        public override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>()
                 .HasKey(product => product.Id);

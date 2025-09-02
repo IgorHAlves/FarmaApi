@@ -14,7 +14,10 @@ namespace FarmaApi2.Repositories
         }
         public Product CreateProduct(Product product)
         {
-            throw new NotImplementedException();
+            _context.Products.Add(product);
+            _context.SaveChanges();
+            
+            return product;
         }
 
         public Product GetProduct(Guid id)

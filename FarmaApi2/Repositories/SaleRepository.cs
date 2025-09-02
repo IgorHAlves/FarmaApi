@@ -1,30 +1,35 @@
-﻿using FarmaApi2.Entity;
+﻿using FarmaApi2.Data.DBContext;
+using FarmaApi2.Entity;
 using FarmaApi2.Interfaces;
 
 namespace FarmaApi2.Repositories
 {
     public class SaleRepository : ISaleRepository
     {
-        private readonly ISaleRepository _saleRepository;
-        public SaleRepository(ISaleRepository saleRepository)
+        private readonly Context _context;
+
+        public SaleRepository(Context context)
         {
-            _saleRepository = saleRepository;
+            _context = context;
         }
         public Sale CreateSale(Sale saleNova)
         {
-            Sale sale = _saleRepository.CreateSale(saleNova);   
+            _context.Sales.Add(saleNova);   
+            _context.SaveChanges();
 
-            return sale;
+            return saleNova;
         }
 
         public Sale GetSale(Guid id)
         {
-            throw new NotImplementedException();
+            Sale sale = _context.Sales.FirstOrDefault(sale => sale.Id == id);
+            
+            return sale;
         }
 
         public List<Sale> GetSales()
         {
-            throw new NotImplementedException();
+            return _context.Sales.ToList();
         }
     }
 }

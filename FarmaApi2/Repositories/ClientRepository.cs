@@ -14,7 +14,10 @@ namespace FarmaApi2.Repositories
         }
         public Client CreateClient(Client client)
         {
-            throw new NotImplementedException();
+            _context.Clients.Add(client);
+            _context.SaveChanges();
+            
+            return client;
         }
 
         public Client GetClient(Guid id)
