@@ -58,9 +58,10 @@ namespace FarmaApi2.Services
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao cadastrar cliente: "+ ex.Message);
-
+                var innerMessage = ex.InnerException?.Message ?? ex.Message;
+                throw new Exception("Erro ao cadastrar cliente: " + innerMessage, ex);
             }
+
         }
     }
 }

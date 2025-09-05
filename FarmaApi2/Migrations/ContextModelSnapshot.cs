@@ -46,7 +46,7 @@ namespace FarmaApi2.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Client");
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("FarmaApi2.Entity.Product", b =>
@@ -71,7 +71,7 @@ namespace FarmaApi2.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Product");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("FarmaApi2.Entity.Sale", b =>
@@ -95,7 +95,7 @@ namespace FarmaApi2.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Sale");
+                    b.ToTable("Sales");
                 });
 
             modelBuilder.Entity("FarmaApi2.Entity.Sale", b =>

@@ -2,10 +2,10 @@
 {
     public class CreateSaleDTO
     {
-        public Guid ProductId;
+        public Guid ProductId { get; set; }
 
-        public Guid ClientId;
+        public Guid ClientId { get; set; }
 
-        public int Amount;
+        public int Amount { get; set; }
     }
 }

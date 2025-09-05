@@ -5,9 +5,9 @@ namespace FarmaApi2.Data.DBContext
 {
     public partial class Context : DbContext
     {
-        public DbSet<Client> Clients;
-        public DbSet<Product> Products;
-        public DbSet<Sale> Sales;
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Sale> Sales { get; set; }
 
         public Context(DbContextOptions<Context> options) : base(options)
         {
@@ -35,12 +35,7 @@ namespace FarmaApi2.Data.DBContext
                 .HasOne(sale => sale.Client)
                 .WithMany(client => client.Sales)
                 .HasForeignKey(sale => sale.ClientId);
-
-            modelBuilder.Entity<Sale>()
-                .HasOne(sale => sale.Product)
-                .WithMany(product => product.Sales)
-                .HasForeignKey(sale => sale.ProductId);
-
+            
             OnModelCreationgPartial(modelBuilder);
         }
         partial void OnModelCreationgPartial(ModelBuilder modelBuilder);

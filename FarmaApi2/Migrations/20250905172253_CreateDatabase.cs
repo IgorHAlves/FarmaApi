@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FarmaApi2.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class CreateDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,7 +15,7 @@ namespace FarmaApi2.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Client",
+                name: "Clients",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
@@ -30,12 +30,12 @@ namespace FarmaApi2.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Client", x => x.Id);
+                    table.PrimaryKey("PK_Clients", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Product",
+                name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
@@ -48,12 +48,12 @@ namespace FarmaApi2.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Product", x => x.Id);
+                    table.PrimaryKey("PK_Products", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Sale",
+                name: "Sales",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
@@ -63,30 +63,30 @@ namespace FarmaApi2.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Sale", x => x.Id);
+                    table.PrimaryKey("PK_Sales", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Sale_Client_ClientId",
+                        name: "FK_Sales_Clients_ClientId",
                         column: x => x.ClientId,
-                        principalTable: "Client",
+                        principalTable: "Clients",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Sale_Product_ProductId",
+                        name: "FK_Sales_Products_ProductId",
                         column: x => x.ProductId,
-                        principalTable: "Product",
+                        principalTable: "Products",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sale_ClientId",
-                table: "Sale",
+                name: "IX_Sales_ClientId",
+                table: "Sales",
                 column: "ClientId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sale_ProductId",
-                table: "Sale",
+                name: "IX_Sales_ProductId",
+                table: "Sales",
                 column: "ProductId");
         }
 
@@ -94,13 +94,13 @@ namespace FarmaApi2.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Sale");
+                name: "Sales");
 
             migrationBuilder.DropTable(
-                name: "Client");
+                name: "Clients");
 
             migrationBuilder.DropTable(
-                name: "Product");
+                name: "Products");
         }
     }
 }

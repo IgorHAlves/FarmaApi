@@ -22,7 +22,7 @@ namespace FarmaApi2.Controllers
         }
 
         [HttpPost(Name = "CreateClient")]
-        public IActionResult CreateClients(CreateClientDTO dto)
+        public IActionResult CreateClients([FromBody]CreateClientDTO dto)
         {
             var client = _clientService.CreateClient(dto);
             return Ok(client);

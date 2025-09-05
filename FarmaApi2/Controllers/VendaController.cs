@@ -24,8 +24,8 @@ namespace FarmaApi2.Controllers
             return Ok(sales);
         }
 
-        [HttpGet(Name = "GetSale")]
-        public IActionResult GetSales([FromQuery] Guid id)
+        [HttpGet("{id:guid}",Name = "GetSale")]
+        public IActionResult GetSale([FromQuery] Guid id)
         {
             Sale sales = _saleService.GetSale(id);
             return Ok(sales);

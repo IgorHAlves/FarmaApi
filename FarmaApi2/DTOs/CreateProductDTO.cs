@@ -2,9 +2,9 @@
 {
     public class CreateProductDTO
     {
-        public string Name;
-        public string Brand;
-        public decimal Price;
-        public int Stock;
+        public string Name { get; set; }
+        public string Brand { get; set; }
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
     }
 }
