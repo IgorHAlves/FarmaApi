@@ -1,5 +1,6 @@
 ﻿using FarmaApi2.DTOs;
 using FarmaApi2.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FarmaApi2.Controllers
@@ -13,7 +14,8 @@ namespace FarmaApi2.Controllers
         {
             _clientService = clientService;
         }
-
+        
+        [Authorize]
         [HttpGet(Name = "GetClients")]
         public IActionResult GetClients()
         {
