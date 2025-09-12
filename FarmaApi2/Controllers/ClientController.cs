@@ -22,7 +22,8 @@ namespace FarmaApi2.Controllers
             var clients = _clientService.GetClients();
             return Ok(clients);
         }
-
+        
+        [Authorize(Roles = "admin")]
         [HttpPost(Name = "CreateClient")]
         public IActionResult CreateClients([FromBody]CreateClientDTO dto)
         {

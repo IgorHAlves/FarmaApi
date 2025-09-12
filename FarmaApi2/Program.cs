@@ -41,6 +41,9 @@ namespace FarmaApi2
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
             builder.Services.AddScoped<ISaleRepository, SaleRepository>();
+            
+            builder.Services.AddScoped<AuthorizeService>();
+
 
             #region  Autorizacao
             builder.Services.AddSwaggerGen(c =>
